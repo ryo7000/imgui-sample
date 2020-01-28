@@ -19,6 +19,8 @@ add_executable(main
     external/imgui/imgui_demo.cpp
     external/imgui/imgui_draw.cpp
     external/imgui/imgui_widgets.cpp
+    src/mvp_window.cpp
+    src/shader.cpp
     src/main.cpp)
 target_link_libraries(main glfw)
 target_compile_definitions(main PUBLIC IMGUI_IMPL_OPENGL_LOADER_GLAD)
@@ -26,4 +28,5 @@ target_compile_definitions(main PUBLIC IMGUI_IMPL_OPENGL_LOADER_GLAD)
 target_include_directories(main PUBLIC
     external/imgui
     external/imgui/examples
-    external/glad/include)
+    external/glad/include
+    external/glm)
